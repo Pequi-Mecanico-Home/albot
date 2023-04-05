@@ -10,4 +10,4 @@ docker run \
         --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
         --cpu-shares 1024  \
         --memory 2g \
-        gazebo-albot:1.1
+        gazebo-rviz-albot:1.2

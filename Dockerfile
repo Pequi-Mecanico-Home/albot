@@ -5,6 +5,7 @@ RUN apt-get install -y --no-install-recommends \
         build-essential \
         ros-foxy-gazebo-plugins \
         ros-foxy-gazebo-ros-pkgs \
+        ros-foxy-rviz2 \
         python3-colcon-common-extensions \
         gcc \
         g++ \
