@@ -1,0 +1,3 @@
+[submodule "albot-description"]
+	path = albot-description
+	url = https://github.com/Pequi-Mecanico-Home/albot-description.git
