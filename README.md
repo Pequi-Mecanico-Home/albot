@@ -1,7 +1,7 @@
 # albot
 
 ```sh 
-docker built -t gazebo-rviz-albot:1.2
+docker build -t gazebo-rviz-albot:1.2 .
 ```
 
 ```sh 
