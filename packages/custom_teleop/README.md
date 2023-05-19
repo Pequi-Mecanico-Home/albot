@@ -18,3 +18,10 @@ After editing your package you need to rebuild your workspace
 cd /gazebo_ws
 colcon build 
 ```
+
+And source it
+
+```sh 
+cd /gazebo_ws
+source install/setup.bash
+```
