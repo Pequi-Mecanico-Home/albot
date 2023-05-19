@@ -16,7 +16,7 @@ RUN apt-get install -y --no-install-recommends \
 
 
 RUN mkdir -p /gazebo_ws/src
-RUN git clone -b sonar https://github.com/Pequi-Mecanico-Home/albot-description.git ./gazebo_ws/src/
+RUN git clone -b sonar https://github.com/Pequi-Mecanico-Home/albot-description.git ./gazebo_ws/src/albot-description
 WORKDIR /gazebo_ws
 RUN /bin/bash -c '. /opt/ros/${ROS_DISTRO}/setup.bash; colcon build --symlink-install' && \ 
     echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /root/.bashrc && \ 
