@@ -1,30 +1,16 @@
 # albot
 
-## Configuring development environment
-
-You need to specify the path to the albot repository you cloned
-
-```sh 
-cd <path_to_cloned_repo>
-pwd
-```
-
-`
-/home/faeu/Desktop/albot
-`
-
-```sh 
-export PATH_ALBOT=/home/faeu/Desktop/
-```
-
-
 ## Building and running the container
 
-```sh 
-docker build -t gazebo-rviz-albot:1.2 .
-```
+The first step to be able to run the albot docker container is to build the image from the Dockerfile, you can do this with the following command:
 
 ```sh 
-source ./docker_gazebo.bash
+docker build -t gazebo-rviz-albot:1.5 .
+```
+
+After building the Docker image properly feel free to run the container via the script `docker_gazebo.sh`
+
+```sh 
+source ./docker_gazebo.sh
 ```
 
