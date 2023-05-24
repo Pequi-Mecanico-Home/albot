@@ -1,3 +1,6 @@
-[submodule "albot-description"]
-	path = albot-description
+# [submodule "albot-description"]
+# 	path = packages/albot-description
+# 	url = https://github.com/Pequi-Mecanico-Home/albot-description.git
+[submodule "packages/albot-description"]
+	path = packages/albot-description
 	url = https://github.com/Pequi-Mecanico-Home/albot-description.git

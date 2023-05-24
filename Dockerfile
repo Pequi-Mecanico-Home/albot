@@ -17,12 +17,16 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN mkdir -p /gazebo_ws/src
 # COPY ./packages /gazebo_ws/src
-RUN git clone -b sonar https://github.com/Pequi-Mecanico-Home/albot-description.git ./gazebo_ws/src/
+# RUN git clone -b sonar https://github.com/Pequi-Mecanico-Home/albot-description.git ./gazebo_ws/src/
 WORKDIR /gazebo_ws
+COPY ./albot_entrypoint.sh /gazebo_ws/albot_entrypoint.sh
+RUN chmod +x /gazebo_ws/albot_entrypoint.sh
 RUN /bin/bash -c '. /opt/ros/${ROS_DISTRO}/setup.bash; colcon build --symlink-install' && \ 
     echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /root/.bashrc && \ 
     echo "source /gazebo_ws/install/setup.bash" >> /root/.bashrc 
 
 RUN sysctl -w kernel.shmmax=2147483648
+
+ENTRYPOINT [ "/gazebo_ws/albot_entrypoint.sh" ]
 
 CMD ["bash"]
