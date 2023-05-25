@@ -29,4 +29,6 @@ RUN sysctl -w kernel.shmmax=2147483648
 
 ENTRYPOINT [ "/gazebo_ws/albot_entrypoint.sh" ]
 
+RUN echo "export ROS_LOCALHOST_ONLY=1" >> /root/.bashrc
+
 CMD ["bash"]
