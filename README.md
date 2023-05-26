@@ -16,7 +16,7 @@ The first step to be able to run the albot docker container is to build the imag
 docker build -t gazebo-rviz-albot:1.5 .
 ```
 
-After building the Docker image properly feel free to run the container via the script `docker_gazebo.sh`
+After building the Docker image properly feel free to run the container via the script `docker_gazebo.sh` inside the albot directory.
 
 ```sh 
 source ./docker_gazebo.sh
