@@ -18,6 +18,7 @@ xhost +local:
 docker run \
         -it \
         --rm \
+        --name albot-container \
         --privileged \
         --net=host \
         --env DISPLAY="$DISPLAY" \
@@ -27,6 +28,6 @@ docker run \
         --volume "$PATH_ALBOT/packages:/gazebo_ws/src" \
         --cpu-shares 1024  \
         --memory 2g \
-        gazebo-rviz-albot:1.5 
+        rafaeljose/albot 
 
 
