@@ -4,3 +4,6 @@
 [submodule "packages/albot-description"]
 	path = packages/albot-description
 	url = https://github.com/Pequi-Mecanico-Home/albot-description.git
+[submodule "packages/albot_move"]
+	path = packages/albot_move
+	url = git@github.com:Pequi-Mecanico-Home/albot_move.git
