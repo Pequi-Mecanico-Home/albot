@@ -6,4 +6,4 @@
 	url = https://github.com/Pequi-Mecanico-Home/albot-description.git
 [submodule "packages/albot_move"]
 	path = packages/albot_move
-	url = git@github.com:Pequi-Mecanico-Home/albot_move.git
+	url = https://github.com/Pequi-Mecanico-Home/albot_move.git
