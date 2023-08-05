@@ -6,6 +6,7 @@ colcon build --symlink-install
 
 source install/setup.bash
 
-chmod 777 -R /gazebo_ws/src
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$ALBOT_WS/src/aws-robomaker-small-warehouse-world/models/
+chmod 777 -R $ALBOT_WS/src
 
 exec "$@"
