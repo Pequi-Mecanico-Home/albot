@@ -1,12 +1,12 @@
 # [submodule "albot-description"]
 # 	path = packages/albot-description
-# 	url = https://github.com/Pequi-Mecanico-Home/albot-description.git
+# 	url = git@github.com:Pequi-Mecanico-Home/albot-description.git
 [submodule "packages/albot-description"]
 	path = packages/albot-description
-	url = https://github.com/Pequi-Mecanico-Home/albot-description.git
+	url = git@github.com:Pequi-Mecanico-Home/albot-description.git
 [submodule "packages/albot_move"]
 	path = packages/albot_move
-	url = https://github.com/Pequi-Mecanico-Home/albot_move.git
+	url = git@github.com:Pequi-Mecanico-Home/albot_move.git
 [submodule "packages/aws-robomaker-small-warehouse-world"]
 	path = packages/aws-robomaker-small-warehouse-world
 	url = git@github.com:Pequi-Mecanico-Home/aws-robomaker-small-warehouse-world.git
